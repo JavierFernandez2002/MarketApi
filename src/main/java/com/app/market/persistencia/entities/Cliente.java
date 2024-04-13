@@ -12,19 +12,19 @@ public class Cliente {
     private String id;
 
     @Column(name = "nombre")
-    private String firtsName;
+    private String nombre;
 
     @Column(name = "apellidos")
-    private String lastName;
+    private String apellido;
 
     @Column(name = "celular")
-    private Long cellphone;
+    private Long celular;
 
     @Column(name = "direccion")
-    private String address;
+    private String direccion;
 
     @Column(name = "correo_electronico")
-    private String email;
+    private String correoElectronico;
 
     @OneToMany(mappedBy = "cliente")
     private List<Compra> compras;
@@ -37,44 +37,44 @@ public class Cliente {
         this.id = id;
     }
 
-    public String getFirtsName() {
-        return firtsName;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setFirtsName(String firtsName) {
-        this.firtsName = firtsName;
+    public void setNombre(String Nombre) {
+        this.nombre = nombre;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    public Long getCellphone() {
-        return cellphone;
+    public Long getCelular() {
+        return celular;
     }
 
-    public void setCellphone(Long cellphone) {
-        this.cellphone = cellphone;
+    public void setCelular(Long celular) {
+        this.celular = celular;
     }
 
-    public String getAddress() {
-        return address;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCorreoElectronico() {
+        return correoElectronico;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 
 }

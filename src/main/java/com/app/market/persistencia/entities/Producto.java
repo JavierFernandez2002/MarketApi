@@ -18,7 +18,7 @@ public class Producto {
     @Column(name = "codigo_barras")
     private String codigoBarras;
 
-    @Column(name = "precio_ventas")
+    @Column(name = "precio_venta")
     private Double precioVentas;
 
     @Column(name = "cantidad_stock")
@@ -38,11 +38,19 @@ public class Producto {
         this.estado = estado;
     }
 
-    public Integer getCantidaStock() {
+    public Integer getCantidadStock() {
         return cantidadStock;
     }
 
-    public void setCantidaStock(Integer cantidaStock) {
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setCantidadStock(Integer cantidaStock) {
         this.cantidadStock = cantidaStock;
     }
 
